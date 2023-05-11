@@ -36,3 +36,5 @@ st.dataframe(fruits_to_show)
 
 st.header("Fruityvice Fruit Advice!")
 st.text(fruityvice_response.json())
+fruityvice_normalized = pd.json_normalize(fruityvice_response.json())
+st.dataframe(fruityvice_normalize)
